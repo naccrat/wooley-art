@@ -1,5 +1,5 @@
 basic_settings:
-  site_title: Farmington Pointe Restoration Exhibit
+  site_title: Retro Game Art
   favicon_image: /images/favicon.png
 
 header_settings:
@@ -20,7 +20,7 @@ menu_settings:
 footer_settings:
   logo_image:
   logo_width: 200
-  footer_tagline: Farmington Pointe Restoration Exhibit
+  footer_tagline: Retro Game Art
 
 grid_settings:
   overlay_opacity: 0.8
