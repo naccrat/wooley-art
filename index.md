@@ -3,6 +3,10 @@ layout: home
 title: Retro Game Art at Its Finest
 description: Step into a time machine and experience the nostalgia of retro game art. 
 ---
+<div class="col-md-7 mt-5">
+  <h1>Retro Game Art at Its Finest</h1>
+  <p>Welcome to our pixelated universe! Step into a time machine and experience the nostalgia of retro game art. Unleash the power of the classics with our handcrafted masterpieces. Dive into the worlds of Zelda, Mario Bros, Sonic, Pacman, and more! Immerse yourself in the vibrant colors and iconic characters of 80s gaming. Explore our collection and embark on a journey to the golden age of video games.</p>
+</div>
 <div class="row row-cols-2 row-cols-lg-4">
   {% for product in site.products %} 
   <div class="col mb-3">
