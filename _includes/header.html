@@ -1,32 +1,16 @@
-<header class="header">
+<header class="col mx-auto">
+  <div class="mb-4">
+    <div class="carousel-inner">
+      <div class="">
+        <img src="images/head-image.png" height="200px">
 
-	<div class="wrap">
-
-		{% if site.data.settings.header_settings.logo_image %}
-		<a href="{{ site.baseurl }}/" class="header__logo">
-			<img src="{{ site.data.settings.header_settings.logo_image }}" class="header__logo__img">
-		</a>
-		{% else %}
-		<a href="{{ site.baseurl }}/" class="header__title">
-			{{ site.data.settings.basic_settings.site_title }}
-		</a>
-		{% endif %}
-
-		<div class="menu">
-			<div class="menu__toggle js-menu-toggle">
-				<div class="menu__toggle__icon"><span></span></div>
-			</div>
-			<div class="menu__wrap">
-				<ul class="menu__list">
-					{% for item in site.data.settings.menu_settings.menu_items %}
-					<li class="menu__list__item">
-						<a href="{{ item.url | relative_url }}" class="menu__list__item__link">{{ item.title }}</a>
-					</li>
-					{% endfor %}
-				</ul>
-			</div>
-		</div>
-
-	</div>
-
+        <div class="container">
+          <div class="carousel-caption text-dark">
+            <h1>{{ site.title }}</h1>
+            <p class="lead my-3">{{ site.tagline }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>

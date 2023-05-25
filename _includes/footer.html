@@ -1,26 +1,39 @@
-<footer class="footer">
+<div class="container-fluid">
+  <footer class="row justify-content-evenly py-5 my-5 border-top">
+    <div class="col">
+      <h5><a href="/" class="d-flex align-items-center mb-2 link-dark text-decoration-none">
+        {{ site.title }}
+      </a></h5>
+      <p class="text-muted">© {{ 'now' | date: "%Y" }} {{ site.company }}</p>
+    </div>
+    <div class="col">
+      <h5>Pages</h5>
+      <ul class="nav flex-column">
+        {% for item in site.menu_settings.menu_items %}
+        <li class="nav-item mb-2">
+            <a class="nav-link p-0 text-muted" href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col">
+      <h5>Movie posters</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="../products/star-wars-movie-poster" class="nav-link p-0 text-muted">Star Wars</a></li>
+        <li class="nav-item mb-2"><a href="../products/the-hobbit-movie-poster" class="nav-link p-0 text-muted">The Hobbit</a></li>
+        <li class="nav-item mb-2"><a href="../products/lion-king-movie-poster" class="nav-link p-0 text-muted">The Lion King</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h5>Free Products</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="/free-products.html" class="nav-link p-0 text-muted">Phone Wallpapers</a></li>
+      </ul>
+    </div>
 
-	<div class="wrap">
+  </footer>
+</div>
 
-		{% if site.data.settings.footer_settings.logo_image %}
-		<a href="{{ site.baseurl }}/" class="footer__logo">
-			<img src="{{ site.data.settings.footer_settings.logo_image | relative_url }}" class="footer__logo__img">
-		</a>
-		{% else %}
-		<a href="{{ site.baseurl }}/" class="footer__title">
-			{{ site.data.settings.basic_settings.site_title }}
-		</a>
-		{% endif %}
-
-		<p class="footer__text">{{ site.data.settings.footer_settings.footer_tagline }}</p>
-
-		<div class="footer__copyright">
-			<span>© {{ 'now' | date: "%Y" }} {{ site.data.settings.basic_settings.site_title }}</span>
-			<a href="https://jekyllthemes.io" target="_blank">Jekyll Themes</a>
-		</div>
-
-		{% include socials.html %}
-
-	</div>
-
-</footer>
+<script src="/assets/dist/js/bootstrap.bundle.min.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
