@@ -1,39 +1,48 @@
-<div class="container-fluid">
-  <footer class="row justify-content-evenly py-5 my-5 border-top">
-    <div class="col">
-      <h5><a href="/" class="d-flex align-items-center mb-2 link-dark text-decoration-none">
-        {{ site.title }}
-      </a></h5>
-      <p class="text-muted">© {{ 'now' | date: "%Y" }} {{ site.company }}</p>
-    </div>
-    <div class="col">
-      <h5>Pages</h5>
-      <ul class="nav flex-column">
-        {% for item in site.menu_settings.menu_items %}
-        <li class="nav-item mb-2">
-            <a class="nav-link p-0 text-muted" href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-    <div class="col">
-      <h5>Movie posters</h5>
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="../products/star-wars-movie-poster" class="nav-link p-0 text-muted">Star Wars</a></li>
-        <li class="nav-item mb-2"><a href="../products/the-hobbit-movie-poster" class="nav-link p-0 text-muted">The Hobbit</a></li>
-        <li class="nav-item mb-2"><a href="../products/lion-king-movie-poster" class="nav-link p-0 text-muted">The Lion King</a></li>
-      </ul>
-    </div>
-    <div class="col">
-      <h5>Free Products</h5>
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2"><a href="/free-products.html" class="nav-link p-0 text-muted">Phone Wallpapers</a></li>
-      </ul>
-    </div>
+<footer>
+			<div class="container center bg-near-white pv4 ph3 ph5-m ph6-l mid-gray avenir">
+				<ul class="footer-columns list pl0 cf ph0-ns">
+          <li class="about list pl0 fl w-100 w-40-l pa2">
+        <h4>Supply</h4>
+        <ul class="list pl0 lh-copy measure-narrow">Supply is a simple e-commerce theme for Jekyll with Gumroad integration</ul>
+      </li>
 
-  </footer>
+
+					<li class="footer-nav fl w-100 w-20-l pa2">
+						<h4>General</h4>
+						<ul class="list pl0 lh-copy">
+							<li><a href="/">Products</a></li>
+							<li><a href="/about/">About</a></li>
+							<li><a href="/blog/">Blog</a></li>
+						</ul>
+					</li>
+
+					<li class="footer-nav fl w-100 w-20-l pa2">
+						<h4>Help</h4>
+						<ul class="list pl0 lh-copy">
+							<li><a href="/support/">Support</a></li>
+							<li><a href="/privacy/">Privacy</a></li>
+							<li><a href="/tutorial/">Tutorials</a></li>
+						</ul>
+					</li>
+
+					<li class="footer-nav fl w-100 w-20-l pa2">
+  <h4>Contact</h4>
+  <ul class="list pl0 lh-copy">
+  <li>Need help with something?</li>
+  <li><a href="/contact/">Get in touch</a>.</li>
+  <br>
+  <div class="social-icons">
+    <a class="GitHub dim" href="https://github.com/yjpl/supply">{% include social-icon.html icon="GitHub" %}</a>
+    <a class="facebook dim" href="https://www.facebook.com/TemplatesSupply/">{% include social-icon.html icon="Facebook" %}</a>
+    <a class="twitter dim" href="https://twitter.com/TemplatesSupply/">{% include social-icon.html icon="Twitter" %}</a>
+    <a class="pinterest dim" href="https://www.pinterest.com/TemplatesSupply/">{% include social-icon.html icon="Pinterest" %}</a>
+    <a class="Instagram dim" href="https://www.instagram.com/templatessupply/">{% include social-icon.html icon="Instagram" %}</a>
+    <a class="linkedin dim" href="https://www.linkedin.com/company/templates-supply/">{% include social-icon.html icon="LinkedIn" %}</a>
+    <a class="RSS dim" href="/products.xml">{% include social-icon.html icon="RSS" %}</a>
+  </div>
+  </ul>
+</li>
+</ul>
+<p class="copyright black-40 f7 f6 tc-l">All Rights Reserved &copy; {{ site.time | date: '%Y' }} {{ site.title }}, Inc. Theme design by <a href="https://alternatyves.com">alternatyves</a></p>
 </div>
-
-<script src="/assets/dist/js/bootstrap.bundle.min.js"></script>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</footer>

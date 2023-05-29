@@ -1,105 +1,16 @@
-<!doctype html>
-<html lang="en">
-  {% include head.html %} 
-  <body>
-    {% include nav.html %}
-    <main class="container">
-      <div class="row gx-5">
-        
-        <div class="col-md-6 order-md-1">
-          <h1 class="mb-4">{{ post.title }}</h1>
+---
+layout: default
+---
+<div class="content pa3 ph6-l">
+	<section class="page measure-wide f5 f4-ns lh-copy avenir">
+		<div class="container {% if page.full_width %}max-container{% endif %}">
+			{{ content }}
 
-          {{ content }}
+			{% if site.data.theme.category_tag_list %}
+      {% include category_tag_list.html %}
+      {% endif %}
 
-          {% include prices.html %}
-          
-          <hr class="col-md-3 my-5">
-
-          <p class="text-secondary text-uppercase">Movie poster quote:</p>
-          <figure>
-            <blockquote class="blockquote">
-              <p>"{{ post.quote-1 }}"</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-              Bilbo Baggins • <cite title="Source Title">The Hobbit</cite>
-            </figcaption>
-          </figure>
-          <figure>
-            <blockquote class="blockquote">
-              <p>“{{ post.quote-2 }}”</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-              Elder Uchtdorf • <cite title="Source Title">Your Great Adventure</cite>
-            </figcaption>
-          </figure>
-                  
-          <p class="text-secondary text-uppercase mt-5">About the print:</p>
-          <p>Museum-quality posters made on thick and durable matte paper.</p>
-          <ul>
-            <li>Paper thickness: 10.3 mil</li>
-            <li>Paper weight: 5.57 oz/y² (189 g/m²)</li>
-            <li>Giclée printing quality</li>
-            <li>Opacity: 94%</li>
-            <li>ISO brightness: 104%</li>
-          </ul>
-
-        </div>
-
-        <div class="col-md-6">
-          <div class="">
-            <img width="100%" src="images/16x20-Hobbit.png" class="mb-4 img-thumbnail" data-bs-toggle="modal" data-bs-target="#image16">
-            <div class="row">
-              <div class="col-md-6 col-sm-12">
-                <img width="100%" src="images/person-hobbit.jpeg" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageClip">
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <img width="100%" src="images/2-clip-hobbit.jpeg" class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageBrick">
-              </div>
-            </div>
-          </div>
-
-          <!-- Modal 1 -->
-          <div class="modal fade" id="imageClip" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-0 p-0">
-                  <img width="100%" src="images/person-hobbit.jpeg">
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Modal 2 -->
-          <div class="modal fade" id="image16" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-0 m-0">
-                  <img width="100%" src="images/16x20-Hobbit.png">
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Modal 3 -->
-          <div class="modal fade" id="imageBrick" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body p-0 m-0">
-                  <img width="100%" src="images/2-clip-hobbit.jpeg">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>      
-    </main>
-    {% include footer.html %}
-  </body>
-</html>
+		</div>
+	</section>
+	{% include post_pagination.html %}
+</div>

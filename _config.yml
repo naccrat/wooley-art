@@ -1,55 +1,35 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# This will be the first part of the title tag for your site <title> site.name + page.title </title>
+title: Supply
+url: "https://supply.templates.supply" # the base hostname & protocol for your site, e.g. http://example.com, also used in jekyll-seo-tag
+baseurl:
+repo: https://github.com/YJPL/Supply/
+google_analytics_key:
 
-title: Retro Game Art
-tagline: Retro Game Art at Its Finest
-company: 325 Studio LLC
-author: Liam Wooly, Artist
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Custom Movie Posters with an uplifting message.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://localhost:4000/" # the base hostname & protocol for your site, e.g. http://example.com
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+tagline:
+description: Jekyll template for e-commerce with Gumroad integration
+author:
+  name: Supply
+  email:
+  twitter: TemplatesSupply # twitter username without the @ symbol
+  phone: ""
+social:
+  name: Templates Supply # replace this
+  links:
+    - https://github.com/YJPL/supply
+    - https://www.linkedin.com/company/templates-supply/
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
-
-menu_settings:
-  menu_items:
-    - title: 'Home'
-      url: '/'
-    - title: 'About'
-      url: '/about'
-    - title: 'Order'
-      url: '/order'
+markdown: kramdown
+timezone: FR
 
 collections:
-  pages:
-    output: true
-    permalink: /:name
   products:
+    _hide_content: false
     output: true
-    order:
-      - postcards-5x7-set.md
+
+permalink: /:title/ # pretty
 
 defaults:
   -
@@ -57,24 +37,75 @@ defaults:
       path: ""
       type: "products"
     values:
-      layout: "products"
+      layout: "product"
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "index.html"
+    values:
+      layout: "default"
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+jekyll-archives:
+  enabled:
+    - categories
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-leaflet
+  - jekyll-feed
+  - jekyll-archives # not on Supply theme
+
+include:
+  - .htaccess
+  - _pages
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
+  - LICENCE
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Contact settings
+formcarry: https://formcarry.com/ # add you formcarry endpoint url (see https://formcarry.com/documentation/getting-started)
+
+# Social
+
+social_icons:
+  - Email
+  - Facebook
+  - Google Plus
+  - Instagram
+  - LinkedIn
+  - Pinterest
+  - Tumblr
+  - Twitter
+  - YouTube
+  - RSS
+
+feed:
+  collections:
+    products:
+      path: "/products.xml"
+
+# Jekyll Archives Settings https://github.com/jekyll/jekyll-archives
+jekyll-archives:
+  enabled: 'all'
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/:name/'
+  category_archive:
+    type: liquid
