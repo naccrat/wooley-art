@@ -25,3 +25,7 @@ image: /images/thumbnail-Link-Zelda-liam-wooley_25116934.png
 This stunning abstract graffiti painting of Link from The Legend of Zelda is a must-have for any fan of the game. The painting is done in a vibrant and colorful style that perfectly captures the spirit of the game. The painting is sure to add a touch of excitement and adventure to any room.
 
 This painting is also a great way to show your support for The Legend of Zelda. It is a unique and one-of-a-kind piece of art that is sure to turn heads. If you are looking for a way to show your love for the game, then this painting is the perfect choice for you.
+
+## What you get
+
+Digital file that you can print and use however you'd like. The dimensions are 1344 × 896.
