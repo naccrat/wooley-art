@@ -1,18 +1,18 @@
 # This will be the first part of the title tag for your site <title> site.name + page.title </title>
-title: Supply
-url: "https://supply.templates.supply" # the base hostname & protocol for your site, e.g. http://example.com, also used in jekyll-seo-tag
+title: Wooley Art
+url: "https://wooley-art.netlify.app/" # the base hostname & protocol for your site, e.g. http://example.com, also used in jekyll-seo-tag
 baseurl:
 repo: https://github.com/YJPL/Supply/
 google_analytics_key:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-tagline:
-description: Jekyll template for e-commerce with Gumroad integration
+tagline: Artistry Inspired by the Golden Age of Gaming
+description: Discover a nostalgic journey through pixelated wonders and relive the golden age of gaming with our collection of retro game art.
 author:
-  name: Supply
+  name: Liam Wooley
   email:
-  twitter: TemplatesSupply # twitter username without the @ symbol
+  twitter: # twitter username without the @ symbol
   phone: ""
 social:
   name: Templates Supply # replace this
