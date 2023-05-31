@@ -1,6 +1,6 @@
 ---
 title: Disclaimer
-permalink: /privacy/
+permalink: /disclaimer/
 hero: Disclaimer
 ---
 
