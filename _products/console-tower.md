@@ -5,16 +5,16 @@ software:
 cat: Consoles
 description_markdown: >-
   The fearless spirit and unwavering determination of the iconic adventurer, Lara Croft.
-date: 2023-05-21 11:48:06 +0100
-last_modified_at: '2023-05-21'
+date: 2023-05-29 11:48:06 +0100
+last_modified_at: '2023-05-29'
 id: soon-jekyll
 price: 20
-text-button: Purchase
-image: /images/game-console-tower-thumbnail.png
+text-button: Purchase on
+image: /images/Intensity-of-Lara-Croft-thumb.png
 ---
-## The Hero of Hyrule
+## {{ page.title }}
 
-<a href="https://wooley.gumroad.com/l/intensityLaraCroft" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/game-console-tower.png"></a>
+<a href="https://wooley.gumroad.com/l/intensityLaraCroft" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/front-mockup-of-a-framed-art-print-on-a-pastel-color-wall-a15285.png"></a>
 
 ### Price
 <h4 itemprop="priceCurrency" content="USD">$<span itemprop="price" content="{{ page.price }}">{{ page.price }}</span></h4>

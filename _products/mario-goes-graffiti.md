@@ -12,7 +12,7 @@ price: 20
 text-button: Purchase
 image: /images/thumbnail-mario-goes-graffiti.png
 ---
-## The Hero of Hyrule
+## {{ page.title }}
 
 <a href="https://wooley.gumroad.com/l/mariopaint" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/mario-goes-graffiti.png"></a>
 

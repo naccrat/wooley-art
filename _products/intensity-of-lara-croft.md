@@ -12,7 +12,7 @@ price: 20
 text-button: Purchase
 image: /images/game-console-tower-thumbnail.png
 ---
-## The Hero of Hyrule
+## {{ page.title }}
 
 <a href="https://wooley.gumroad.com/l/gameconsoletower" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/game-console-tower.png"></a>
 

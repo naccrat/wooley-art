@@ -12,7 +12,7 @@ price: 20
 text-button: Purchase
 image: /images/thumbnail-Link-Zelda-liam-wooley_25116934.png
 ---
-## The Hero of Hyrule
+## {{ page.title }}
 
 <a href="https://wooley.gumroad.com/l/linkHeroHyrule" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/link-zelda-liam-wooley.png"></a>
 
