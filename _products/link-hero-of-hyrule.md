@@ -2,9 +2,9 @@
 title: The Hero of Hyrule
 layout: product
 software: 
-cat: Zelda, Games
+cat: Legand of Zelda
 description_markdown: >-
-  Stunning abstract graffiti painting of Link from The Legend of Zelda 
+  Stunning abstract graffiti painting of Link from The Legend of Zelda.
 date: 2023-05-10 11:48:06 +0100
 last_modified_at: '2023-05-10'
 id: soon-jekyll

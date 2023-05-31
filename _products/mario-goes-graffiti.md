@@ -2,9 +2,9 @@
 title: Mario Goes Graffiti
 layout: product
 software: 
-cat: Zelda, Games
+cat: Super Mario Bros
 description_markdown: >-
-  Stunning abstract graffiti painting of Mario from Super Mario Bros 
+  Stunning abstract graffiti painting of Mario from Super Mario Bros.
 date: 2023-05-15 11:48:06 +0100
 last_modified_at: '2023-05-15'
 id: soon-jekyll
