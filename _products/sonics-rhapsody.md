@@ -13,7 +13,7 @@ text-button: Purchase on
 image: /images/sonic/sonics-rhapsody-thumbnail.jpeg
 gumroad: SonicsRhapsody
 ---
-<a href="https://wooley.gumroad.com/l/SonicsRhapsody" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/sonic/sonics-rhapsody-mock.png"></a>
+<a href="https://wooley.gumroad.com/l/SonicsRhapsody" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/sonic/sonics-rhapsody-mock.jpeg"></a>
 
 ### Price
 <h4 itemprop="priceCurrency" content="USD">$<span itemprop="price" content="{{ page.price }}">{{ page.price }}</span></h4>
