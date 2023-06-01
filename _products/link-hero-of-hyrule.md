@@ -10,11 +10,11 @@ last_modified_at: '2023-05-10'
 id: soon-jekyll
 price: 20
 text-button: Purchase
-image: /images/thumbnail-Link-Zelda-liam-wooley_25116934.png
+image: /images/the-hero-of-hyrule-thumbnail.png
 ---
 ## {{ page.title }}
 
-<a href="https://wooley.gumroad.com/l/linkHeroHyrule" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/link-zelda-liam-wooley.png"></a>
+<a href="https://wooley.gumroad.com/l/linkHeroHyrule" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/the-hero-of-hyrule-mock.png"></a>
 
 ### Price
 <h4 itemprop="priceCurrency" content="USD">$<span itemprop="price" content="{{ page.price }}">{{ page.price }}</span></h4>

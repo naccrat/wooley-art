@@ -10,11 +10,11 @@ last_modified_at: '2023-05-15'
 id: soon-jekyll
 price: 20
 text-button: Purchase
-image: /images/thumbnail-mario-goes-graffiti.png
+image: /images/mario-goes-graffiti-thumbnail.png
 ---
 ## {{ page.title }}
 
-<a href="https://wooley.gumroad.com/l/mariopaint" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/mario-goes-graffiti.png"></a>
+<a href="https://wooley.gumroad.com/l/mariopaint" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/mario-goes-graffiti-mock.png"></a>
 
 ### Price
 <h4 itemprop="priceCurrency" content="USD">$<span itemprop="price" content="{{ page.price }}">{{ page.price }}</span></h4>
