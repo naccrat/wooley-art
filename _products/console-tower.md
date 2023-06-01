@@ -2,7 +2,7 @@
 title: Console Tower
 layout: product
 software: 
-cat: Consoles
+cat: Games
 description_markdown: >-
   An awe-inspiring abstract digital illustration art piece that transcends the boundaries of gaming and art.
 date: 2023-05-20 11:48:06 +0100
@@ -12,8 +12,6 @@ price: 20
 text-button: Purchase
 image: /images/game-console-tower-thumbnail.png
 ---
-## {{ page.title }}
-
 <a href="https://wooley.gumroad.com/l/gameconsoletower" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/game-console-tower-mock.png"></a>
 
 ### Price

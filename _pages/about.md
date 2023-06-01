@@ -7,7 +7,7 @@ text-button: I demand Supply!
 ## Welcome to Wooley Art
 ### Game Art at Its Finest
 
-Hey there, I'm Wooley, the artist behind Wooley Art. At Wooley Art, I'm more than just an enthusiast - I'm a keeper of gaming history. My passion lies in creating stunning art pieces that capture the essence of the games that shaped our childhood. With meticulous attention to detail, I transform pixels into timeless works of art.
+Hey there, I'm Liam Wooley, the artist behind Wooley Art. At Wooley Art, I'm more than just an enthusiast - I'm a keeper of gaming history. My passion lies in creating stunning art pieces that capture the essence of the games that shaped our childhood. With meticulous attention to detail, I transform pixels into timeless works of art.
 
 Join me on this nostalgic journey as we celebrate the iconic characters and memories that have become a part of our gaming heritage. Indulge in the magic of retro gaming with our exclusive collection of art pieces. Together, let's rediscover your favorite characters and scenes from the most beloved games of all time.
 

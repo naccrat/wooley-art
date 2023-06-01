@@ -12,8 +12,6 @@ price: 20
 text-button: Purchase
 image: /images/the-hero-of-hyrule-thumbnail.png
 ---
-## {{ page.title }}
-
 <a href="https://wooley.gumroad.com/l/linkHeroHyrule" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/the-hero-of-hyrule-mock.png"></a>
 
 ### Price

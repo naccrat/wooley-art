@@ -2,7 +2,7 @@
 title: Intensity of Lara Croft
 layout: product
 software: 
-cat: Consoles
+cat: Tomb Raider
 description_markdown: >-
   The fearless spirit and unwavering determination of the iconic adventurer, Lara Croft.
 date: 2023-05-29 11:48:06 +0100
@@ -12,8 +12,6 @@ price: 20
 text-button: Purchase on
 image: /images/Intensity-of-Lara-Croft-thumb.png
 ---
-## {{ page.title }}
-
 <a href="https://wooley.gumroad.com/l/intensityLaraCroft" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/Intensity-of-Lara-Croft-mock.png"></a>
 
 ### Price
