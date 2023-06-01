@@ -2,7 +2,7 @@
 title: Intensity of Lara Croft
 layout: product
 software: 
-cat: Tomb Raider
+cat: Tomb Raider, Digital file
 description_markdown: >-
   The fearless spirit and unwavering determination of the iconic adventurer, Lara Croft.
 date: 2023-05-29 11:48:06 +0100

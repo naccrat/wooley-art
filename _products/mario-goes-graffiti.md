@@ -2,14 +2,14 @@
 title: Mario Goes Graffiti
 layout: product
 software: 
-cat: Super Mario Bros
+cat: Super Mario Bros, Digital file
 description_markdown: >-
   Stunning abstract graffiti painting of Mario from Super Mario Bros.
 date: 2023-05-15 11:48:06 +0100
 last_modified_at: '2023-05-15'
 id: soon-jekyll
 price: 20
-text-button: Purchase
+text-button: Purchase on
 image: /images/mario-goes-graffiti-thumbnail.png
 ---
 <a href="https://wooley.gumroad.com/l/mariopaint" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/mario-goes-graffiti-mock.png"></a>

@@ -2,14 +2,14 @@
 title: Peach's Urban Reign
 layout: product
 software: 
-cat: Super Mario Bros
+cat: Super Mario Bros, Digital file
 description_markdown: >-
   The iconic Princess Peach from the beloved Nintendo franchise.
 date: 2023-05-15 11:48:06 +0100
 last_modified_at: '2023-05-15'
 id: soon-jekyll
 price: 20
-text-button: Purchase
+text-button: Purchase on
 image: /images/peachs-urban-reign-thumb.jpeg
 ---
 <a href="https://wooley.gumroad.com/l/peachsUrbanReign" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/peachs-urban-reign-mock.png"></a>

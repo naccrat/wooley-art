@@ -2,14 +2,14 @@
 title: Tetris Dreamscape
 layout: product
 software: 
-cat: Tetris
+cat: Tetris, Digital file
 description_markdown: >-
   A realm where the iconic game of Tetris takes on a mesmerizing new form.
 date: 2023-05-15 11:48:06 +0100
 last_modified_at: '2023-05-15'
 id: soon-jekyll
 price: 20
-text-button: Purchase
+text-button: Purchase on
 image: /images/tetris/tetris-dreamscape-thumbnail.jpeg
 gumroad: TetrisDreamscape
 ---
