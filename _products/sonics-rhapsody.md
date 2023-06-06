@@ -1,12 +1,12 @@
 ---
-title: Tetris Dreamscape
+title: Sonics Rhapsody
 layout: product
 software: 
 cat: Sonic the Hedgehog, Digital file
 description_markdown: >-
   The beloved blue blur, Sonic the Hedgehog.
-date: 2023-06-1 11:48:06 +0100
-last_modified_at: '2023-06-1'
+date: 2023-05-14 11:48:06 +0100
+last_modified_at: '2023-05-14'
 id: soon-jekyll
 price: 20
 text-button: Purchase on
