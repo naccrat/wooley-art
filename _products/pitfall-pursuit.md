@@ -11,14 +11,14 @@ id: soon-jekyll
 price: 20
 text-button: Purchase on
 image: /images/pitfall/pitfall-thumbnail.jpeg
-gumroad: pitfall-pursuit
+gumroad: PitfallPursuit
 ---
-<a href="https://wooley.gumroad.com/l/pitfall-pursuit" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/pitfall/pitfall-mock.png"></a>
+<a href="https://wooley.gumroad.com/l/PitfallPursuit" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/pitfall/pitfall-mock.png"></a>
 
 ### Price
 <h4 itemprop="priceCurrency" content="USD">$<span itemprop="price" content="{{ page.price }}">{{ page.price }}</span></h4>
 
-{% include gumroad-overlay.html id="pitfall-pursuit" %}
+{% include gumroad-overlay.html id="PitfallPursuit" %}
 
 ## Description
 Embark on an exhilarating adventure with "Pitfall Pursuit" – an extraordinary abstract digital illustration that brings the iconic Pitfall video game to life in a fresh and captivating way. Immerse yourself in the heart-pounding action as Pitfall Harry leaps over a treacherous swamp teeming with creatures, evoking memories of the classic game that captured the imaginations of gamers worldwide.
