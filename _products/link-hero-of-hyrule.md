@@ -9,15 +9,22 @@ date: 2023-05-20 11:48:06 +0100
 last_modified_at: '2023-05-20'
 id: soon-jekyll
 price: 20
+price_print: 15–25
 text-button: Purchase on
 image: /images/the-hero-of-hyrule-thumbnail.png
 ---
 <a href="https://wooley.gumroad.com/l/linkHeroHyrule" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/the-hero-of-hyrule-mock.png"></a>
 
 ### Price
+<h3>Digital Download</h3>
 <h4 itemprop="priceCurrency" content="USD">$<span itemprop="price" content="{{ page.price }}">{{ page.price }}</span></h4>
 
 {% include gumroad-overlay.html id="linkHeroHyrule" %}
+
+<h3>Printed Poster</h3>
+<h4 itemprop="priceCurrency" content="USD">$<span itemprop="price" content="{{ page.price }}">{{ page.price_print }}</span></h4>
+
+{% include gumroad-overlay.html id="Link-The-Hero-of-Hyrule-Printed-Poster" %}
 
 ## Description
 This stunning abstract graffiti painting of Link from The Legend of Zelda is a must-have for any fan of the game. The painting is done in a vibrant and colorful style that perfectly captures the spirit of the game. The painting is sure to add a touch of excitement and adventure to any room.
