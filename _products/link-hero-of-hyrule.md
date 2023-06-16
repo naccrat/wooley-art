@@ -16,13 +16,11 @@ image: /images/the-hero-of-hyrule-thumbnail.png
 <a href="https://wooley.gumroad.com/l/linkHeroHyrule" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/the-hero-of-hyrule-mock.png"></a>
 
 ### Price
-<h3>Digital Download</h3>
-<h4 itemprop="priceCurrency" content="USD">$<span itemprop="price" content="{{ page.price }}">{{ page.price }}</span></h4>
+<h4 itemprop="priceCurrency" content="USD">Digital Download $<span itemprop="price" content="{{ page.price }}">{{ page.price }}</span></h4>
 
 {% include gumroad-overlay.html id="linkHeroHyrule" %}
-
-<h3>Printed Poster</h3>
-<h4 itemprop="priceCurrency" content="USD">$<span itemprop="price" content="{{ page.price }}">{{ page.price_print }}</span></h4>
+<hr>
+<h4 itemprop="priceCurrency" content="USD">Printed Poster $<span itemprop="price" content="{{ page.price }}">{{ page.price_print }}</span></h4>
 
 {% include gumroad-overlay.html id="Link-The-Hero-of-Hyrule-Printed-Poster" %}
 
