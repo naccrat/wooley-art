@@ -2,23 +2,30 @@
 title: Sonics Rhapsody
 layout: product
 software: 
-cat: Sonic the Hedgehog, Digital file
+cat: Sonic the Hedgehog, Print, Digital
 description_markdown: >-
   The beloved blue blur, Sonic the Hedgehog.
 date: 2023-05-14 11:48:06 +0100
 last_modified_at: '2023-05-14'
 id: soon-jekyll
-price: 20
-text-button: Purchase on
+price: 15 - 25
+price_digital: 25
+text-button: Purchase a print on
 image: /images/sonic/sonics-rhapsody-thumbnail.jpeg
-gumroad: SonicsRhapsody
+gumroad: Sonics-Rhapsody-Printed-Poster
 ---
-<a href="https://wooley.gumroad.com/l/SonicsRhapsody" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/sonic/sonics-rhapsody-mock.jpeg"></a>
+<a href="https://wooley.gumroad.com/l/Sonics-Rhapsody-Printed-Poster" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/sonic/enhanced-matte-paper-poster-(in)-20x30-front-648cd4da9acda.png"></a>
 
 ### Price
-<h4 itemprop="priceCurrency" content="USD">$<span itemprop="price" content="{{ page.price }}">{{ page.price }}</span></h4>
+<h4 itemprop="priceCurrency" content="USD">Printed Poster $<span itemprop="price" content="{{ page.price }}">{{ page.price }}</span></h4>
 
-{% include gumroad-overlay.html id="SonicsRhapsody" %}
+{% include gumroad-overlay.html id="Sonics-Rhapsody-Printed-Poster" %}
+
+<p itemprop="priceCurrency" content="USD">Digital $
+  <span itemprop="price" content="{{ page.price_digital }}">{{ page.price_digital }}</span>
+  <a href="https://wooley.gumroad.com/l/SonicsRhapsody">Purchase a digital version</a>
+</p>
+<hr>
 
 ## Description
 Introducing "Sonic's Rhapsody" – an electrifying abstract digital illustration that pays homage to the beloved blue blur, Sonic the Hedgehog. This captivating artwork captures the essence of Sonic's iconic speed, energy, and vibrant world in a truly mesmerizing way.
@@ -33,6 +40,19 @@ Experience the magic of "Sonic's Rhapsody" and celebrate the legacy of one of ga
 
 Embrace the exhilaration, embrace the artistry, and let "Sonic's Rhapsody" become a cherished centerpiece in your collection. It's time to embark on a visual journey that captures the essence of Sonic's vibrant universe, reminding us all of the power of speed, adventure, and the enduring legacy of a gaming icon.
 
-## What you get
+<hr>
 
-Digital file that you can print and use however you'd like.
+### About the poster
+Bring out the best in your artwork with these museum-quality posters made of thick matte paper. Each poster is printed with a multicolor, water-based inkjet printing technique that yields brilliant prints to brighten up any room.
+
+Paper thickness: 10.3 mil (0.26 mm)
+
+Paper weight: 189 g/m²
+
+Opacity: 94%
+
+ISO brightness: 104%
+
+Paper is sourced from Japan
+
+This product is made on demand. No minimums.

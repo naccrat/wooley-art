@@ -2,15 +2,15 @@
 title: The Hero of Hyrule
 layout: product
 software: 
-cat: Legand of Zelda, Poster, Digital
+cat: Legand of Zelda, Print, Digital
 description_markdown: >-
   Stunning abstract graffiti painting of Link from The Legend of Zelda.
 date: 2023-05-20 11:48:06 +0100
 last_modified_at: '2023-05-20'
 id: soon-jekyll
-price: 15 – 20
+price: 15 – 25
 price_digital: 25
-text-button: Purchase on
+text-button: Purchase a print on
 image: /images/the-hero-of-hyrule-thumbnail.png
 ---
 <a href="https://wooley.gumroad.com/l/linkHeroHyrule" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/the-hero-of-hyrule-mock.png"></a>
