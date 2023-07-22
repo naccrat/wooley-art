@@ -2,7 +2,7 @@
 title: Wooley Art | Game Art
 url: "https://wooleyart.com" # the base hostname & protocol for your site, e.g. http://example.com, also used in jekyll-seo-tag
 baseurl:
-repo: https://github.com/YJPL/Supply/
+repo: 
 google_analytics_key: G-D0SHHPXVR7
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
@@ -10,15 +10,14 @@ logo: /siteicon.png
 tagline: Art Inspired by the Golden Age of Gaming
 description: Discover a nostalgic journey through illustrated wonders and relive the golden age of gaming with our collection of game art.
 author:
-  name: Liam Wooley
-  email:
+  name: Wooley
+  email: info@wooleyart.com
   twitter: # twitter username without the @ symbol
-  phone: ""
+  phone: "(385) 469-2233"
 social:
-  name: Templates Supply # replace this
+  name: Wooley Art # replace this
   links:
-    - https://github.com/YJPL/supply
-    - https://www.linkedin.com/company/templates-supply/
+    - https://wooleyart.com
 
 # Build settings
 markdown: kramdown
