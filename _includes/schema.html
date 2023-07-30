@@ -1,0 +1,25 @@
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "{{ site.schema_type }}",
+    "name": "{{ site.title }}",
+    "image": "{{ site.url }}/img/{{ site.logo }}",
+    "telephone": "{{ site.phone }}",
+    "priceRange": "{{ site.priceRange}}",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "{{ site.address.city }}",
+      "addressRegion": "{{ site.address.state }}",
+      "addressCountry": "{{ site.address.country }}",
+      "postalCode": "{{ site.address.postalCode }}"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": {
+        "@type": "DayOfWeek",
+        "name": "{{ site.hours.dayOfWeek }}"
+      }
+    },
+    "url": "{{ site.url }}"
+  }
+</script>

@@ -1,17 +1,8 @@
-- name: Products
-  link: /
-  new_window: false
-  highlight: true
-- name: About
-  link: /about/
-  new_window: false
-  highlight: false
-- name: Contact
-  link: /contact/
-  new_window: false
-  highlight: false
-
-- name: FAQ
-  link: /faq/
-  new_window: false
-  highlight: false
+- title: "Artwork"
+  url: "/"
+- title: "About"
+  url: "/about/"
+- title: "Contact"
+  url: "/contact/"
+- title: "Support"
+  url: "/support/"

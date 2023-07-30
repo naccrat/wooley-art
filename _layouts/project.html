@@ -1,0 +1,54 @@
+{% include head.html %}
+  <body data-bs-spy="scroll" data-bs-target="#navScroll">
+  {% include nav.html %}
+  <main>
+    <div class="w-100 overflow-hidden text-light">
+      <div class="container-fluid position-relative" style="background-color: #000000;">
+        <div class="col-12 col-lg-12 mt-0 h-100 position-absolute top-0 end-0 bg-cover" style="background-image: url(/img/projects/{{ page.featured_image.one }}); opacity: 0.3;">
+        </div>
+        <div class="container">
+          <div class="col-lg-10 py-vh-3 position-relative">
+            <h1 class="display-3 fw-bold mt-5 pt-5">{{ page.title }}</h1>
+            <p class="lead">{{ page.subtitle }}</p>
+						<p><span class="badge bg-dark">{{ page.category.one }}</span> <span class="badge bg-dark">{{ page.category.two }}</span>
+						</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-vh-3 w-100 overflow-hidden bg-gray-100">
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <div class="col-lg-6">
+            {{ content }}
+          </div>
+          <div class="col-lg-6">
+            <div class="row py-5">
+              <div class="col-md-9 offset-md-2">
+                {% if page.featured_image.one %}
+                <div class="shadow ratio ratio-1x1 bg-cover bp-center align-self-end aos-init aos-animate" data-aos="fade-right" style="background-image: url({{ site.data.settings.basic_settings.url }}/img/projects/{{ page.featured_image.one }});">
+                {% endif %}
+                </div>
+              </div>
+              <div class="col-md-6 offset-md-1">
+                {% if page.featured_image.two %}
+                <div class="shadow ratio ratio-1x1 bg-cover mt-5 bp-center float-end aos-init aos-animate" data-aos="fade-up" style="background-image: url({{ site.data.settings.basic_settings.url }}/img/projects/{{ page.featured_image.two }});">
+                </div>
+                {% endif %}
+              </div>
+              <div class="col-md-5">
+                {% if page.featured_image.three %}
+                <div class="col-12 shadow ratio ratio-1x1 bg-cover mt-5 bp-center aos-init aos-animate" data-aos="fade-left" style="background-image: url({{ site.data.settings.basic_settings.url }}/img/projects/{{ page.featured_image.three }});">
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+  </main>
+  {% include footer.html %}
+  </body>
+</html>

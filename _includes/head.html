@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="h-100" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="HandheldFriendly" content="true">
+  <title>{{ site.title }} | {{ page.title }}</title>
+  <meta property="og:title" content="{{ site.title }}" />
+  <meta name="author" content="{{ site.author }}" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="description" content="{{ site.description }}" />
+  <meta property="og:description" content="{{ site.description }}" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:site_name" content="{{ page.title}}" />
+  <meta property="og:image" content="{{ site.url }}/img{{ page.url }}{{ page.image }}" />
+  <meta property="og:type" content="{{ site.schema_type }}" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="twitter:image" content="{{ site.url }}/img{{ page.url }}{{ page.image }}" />
+  <meta property="twitter:title" content="{{ page.title }} | {{ site.title }}" />
+  <!-- Schema -->
+  {% include schema.html %}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_analytics }}');
+  </script>
+  <!-- Icons -->
+  <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="{{ site.url }}/css/theme.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="{{ site.data.settings.font_settings.font_embed }}" rel="stylesheet">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+</head>

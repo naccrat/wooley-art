@@ -1,50 +1,96 @@
 <footer>
-			<div class="container center bg-near-white pv4 ph3 ph5-m ph6-l mid-gray avenir">
-				<ul class="footer-columns list pl0 cf ph0-ns">
-          <li class="about list pl0 fl w-100 w-40-l pa2">
-        <h4>Wooley Art</h4>
-        <ul class="list pl0 lh-copy measure-narrow">Art Inspired by the Golden Age of Gaming</ul>
-      </li>
+  <div class="container small border-top">
+    <div class="row py-5 d-flex justify-content-between">
+      <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+        {% if site.data.settings.basic_settings.logo %}
+        <a href="{{ site.data.settings.basic_settings.url }}">
+          <img src="{{ site.data.settings.basic_settings.url }}/img/{{ site.data.settings.basic_settings.logo }}" class="pb-3" width="{{ site.data.settings.basic_settings.logo-width }}" alt="Logo for {{ site.data.settings.basic_settings.title }}">
+        </a>
+        {% else %}
+        <h3 class="h6 mb-3"><a href="{{ site.data.settings.basic_settings.url }}" class="text-decoration-none">{{ site.data.settings.basic_settings.title }}</a></h3>
+        {% endif %}
+        <address class="text-secondary mt-3">
+          {{ site.data.settings.basic_settings.location }}
+          <a href="tel:{{ site.data.settings.basic_settings.phone }}" class="btn btn-custom-primary mt-1">
+          {{ site.data.settings.basic_settings.phone }}</a>
+        </address>
+        <h3 class="h6 mb-3">Working Hours</h3>
+        <p><strong>Monday&ndash;Friday</strong><br>
+          9:00 am&ndash;5:00 pm</p>
+      </div>
 
+      <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+        <h3 class="h6 mb-3">Navigation</h3>
+        <ul class="nav flex-column">
+          {% for item in site.data.navigation %}
+          <li class="nav-item">
+            <a href="{{ item.url }}" class="nav-link link-secondary ps-0">{{ item.title }}</a>
+          </li>
+          {% endfor %}
+          <li class="nav-item">
+            <a class="nav-link link-secondary ps-0" href="/sitemap.xml" target="_blank">Sitemap</a>
+          </li>
+        </ul>
+      </div>
 
-					<li class="footer-nav fl w-100 w-20-l pa2">
-						<h4>General</h4>
-						<ul class="list pl0 lh-copy">
-							<li><a href="/">Products</a></li>
-							<li><a href="/about/">About</a></li>
-							<!-- <li><a href="/blog/">Blog</a></li> -->
-						</ul>
-					</li>
+      <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+        <h3 class="h6 mb-3">Services</h3>  
+        {% for cat in site.category-list %}  
+        <ul class="nav flex-column">
+          {% for page in site.pages %}
+            {% if page.resource == true %}
+              {% for pc in page.categories %}
+                {% if pc == cat %}
+                  <li class="nav-item">
+                    <a class="nav-link link-secondary ps-0" href="{{ page.url }}">{{ page.title }}</a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+        </ul>
+        {% endfor %}
+      </div>
 
-					<li class="footer-nav fl w-100 w-20-l pa2">
-						<h4>Help</h4>
-						<ul class="list pl0 lh-copy">
-							<li><a href="/support/">Support</a></li>
-							<li><a href="/privacy/">Privacy</a></li>
-              <li><a href="/disclaimer/">Disclaimer</a></li>
-						</ul>
-					</li>
+      <div class="col-12 col-lg-6 col-xl-3 p-5">
+        <h3 class="h6 mb-3">Social</h3>
+        <ul class="socials">
+          {% for url in site.data.settings.social_settings %}
+          {% if url[1] != '' %}
+          <li class="socials__item">
+            <a href="{{ url[1] }}" target="_blank" class="socials__item__link" title="{{ url[0] | remove: '_url' | replace: '-', ' ' | capitalize }}">
+              <i class="fab fa-{{ url[0] | replace: 'facebook', 'facebook-f' | remove: '_url' }}" aria-hidden="true"></i>
+            </a>
+          </li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
 
-					<li class="footer-nav fl w-100 w-20-l pa2">
-  <h4>Contact</h4>
-  <ul class="list pl0 lh-copy">
-  <li>Looking for something custom?</li>
-  <li><a href="/contact/">Get in touch</a></li>
-  <br>
-  <a class="facebook dim" href="https://www.facebook.com/profile.php?id=100092839737022">{% include social-icon.html icon="Facebook" %}</a>
-  <a class="Instagram dim" href="https://www.instagram.com/wooley_art/">{% include social-icon.html icon="Instagram" %}</a>
-  <!-- <div class="social-icons">
-    <a class="GitHub dim" href="https://github.com/yjpl/supply">{% include social-icon.html icon="GitHub" %}</a>
-    
-    <a class="twitter dim" href="https://twitter.com/TemplatesSupply/">{% include social-icon.html icon="Twitter" %}</a>
-    <a class="pinterest dim" href="https://www.pinterest.com/TemplatesSupply/">{% include social-icon.html icon="Pinterest" %}</a>
-    
-    <a class="linkedin dim" href="https://www.linkedin.com/company/templates-supply/">{% include social-icon.html icon="LinkedIn" %}</a>
-    <a class="RSS dim" href="/products.xml">{% include social-icon.html icon="RSS" %}</a>
-  </div> -->
-  </ul>
-</li>
-</ul>
-<p class="copyright black-40 f7 f6 tc-l">All Rights Reserved &copy; {{ site.time | date: '%Y' }} {{ site.title }}, Inc. Managed by <a href="https://325studio.com">325 Studio</a>. Design by <a href="https://alternatyves.com">alternatyves</a></p>
-</div>
+  <div class="container text-center py-3 small">
+    © 2023 All Rights Reserved | <a href="{{ site.data.settings.basic_settings.url }}" class="link-fancy">{{ site.data.settings.basic_settings.title}}</a> | <a class="link-fancy" href="/privacy-policy/">Privacy Policy</a> | <a class="link-fancy" href="/terms-of-service/">Terms of Service</a>
+  </div>
 </footer>
+
+<script src="{{ site.data.settings.basic_settings.url }}/js/bootstrap.bundle.min.js"></script>
+<script src="{{ site.data.settings.basic_settings.url }}/js/aos.js"></script>
+
+<script>
+  let scrollpos = window.scrollY
+  const header = document.querySelector(".navbar")
+  const header_height = header.offsetHeight
+
+  const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
+  const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
+
+  window.addEventListener('scroll', function() {
+    scrollpos = window.scrollY;
+
+    if (scrollpos >= header_height) { add_class_on_scroll() }
+    else { remove_class_on_scroll() }
+
+    console.log(scrollpos)
+  })
+</script>

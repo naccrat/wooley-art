@@ -1,24 +1,18 @@
 ---
-title: Mega Man Mosaic
 layout: product
-software: 
-cat: Mega Man, Digital file
-description_markdown: >-
-  Mega Man in an abstract digital illustration that brings to life the iconic hero from the Nintendo video game series.
+title: Mega Man Mosaic
+description: Mega Man in an abstract digital illustration that brings to life the iconic hero from the Nintendo video game series.
+categories: Digital
 date: 2023-06-03 11:48:06 +0100
-last_modified_at: '2023-06-03'
-id: soon-jekyll
-price: 20
-text-button: Purchase on
-image: /images/mega-man/mega-man-thumbnail.jpeg
-gumroad: MegaManMosaic
+last_modified_at: '2023-06-05'
+price_print: 
+price_digital: 20
+text-button: Order Now
+image_thumbnail: mega-man/mega-man-thumbnail.jpeg
+image: mega-man/mega-man-mock.png
+gumroad_print: 
+gumroad_digital: MegaManMosaic
 ---
-<a href="https://wooley.gumroad.com/l/MegaManMosaic" class="no-underline pv2 grow db"><img class="w-100" src="{{site.baseurl}}/images/mega-man/mega-man-mock.png"></a>
-
-### Price
-<h4 itemprop="priceCurrency" content="USD">$<span itemprop="price" content="{{ page.price }}">{{ page.price }}</span></h4>
-
-{% include gumroad-overlay.html id="MegaManMosaic" %}
 
 ## Description
 Introducing "Mega Man Mosaic" – a captivating abstract digital illustration that brings to life the iconic hero from the Nintendo video game series. This mesmerizing artwork weaves together a tapestry of vibrant colors, dynamic shapes, and futuristic energy, paying homage to the beloved character, Mega Man.
@@ -30,7 +24,3 @@ Hang "Mega Man Mosaic" proudly on your wall and let its vibrant energy electrify
 Celebrate the legacy of Mega Man with "Mega Man Mosaic" and embrace the fusion of art and gaming. Let this abstract digital illustration be a testament to your love for the character and a constant reminder of the limitless possibilities that lie within the realm of creativity.
 
 Let this artwork become a cherished centerpiece in your collection, a symbol of the power of technology, heroism, and the enduring impact of a gaming legend.
-
-## What you get
-
-Digital file that you can print and use however you'd like.
