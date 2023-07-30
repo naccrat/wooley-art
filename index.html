@@ -1,44 +1,38 @@
 ---
-layout: default
 title: Wooley Art
-description: Discover a nostalgic journey through illustrated wonders and relive the golden age of gaming with our collection of game art.
+hero: Game Art
+subtitle: Discover a nostalgic journey through illustrated wonders and relive the golden age of gaming with our collection of game art.
 ---
 
-<div class="w-100 overflow-hidden">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="row row-cols-1 row-cols-md-2 g-5 mb-5">
-          {% for product in site.products reversed %}
-          <div class="col-12 col-lg-6 col-xl-4 ">
-            <div class="card h-100 border-0">
-              
-              <div class="position-relative">
-                <p class="fs-5 fw-bolder position-absolute top-0 start-0 mt-3 py-2 px-3 bg-cta-custom text-light shadow-sm">
-                  {% if product.price_print %}
-                    ${{ product.price_print }}
-                  {% else %}
-                    ${{ product.price_digital }}
-                  {% endif %}
-                </p>
-              </div>
-              <img src="img/products/{{ product.image_thumbnail }}" width="100%" class="shadow-sm">
-              
-              <div class="card-body">
-                
-                <h3 class="card-title pt-1">
-                  <a href="{{ product.url }}" class="stretched-link text-decoration-none">{{ product.title }}</a>
-                </h3>
+<div itemscope itemtype="http://schema.org/ItemList" class="content" id="products">
+	<section class="cf pb5 ph6-ns ph2">
+		<div class="container flex-wrap flex">
 
-                <p class="card-text">{{ product.description | truncate: 95 | markdownify }}</p>
-                <div class="card-footer text-muted small px-0 bg-transparent">{{ product.categories | join: ', ' }}
-                </div>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-  </div>
+				{% for product in site.products reversed %}
+
+				<div itemprop="itemListElement" itemscope itemtype="http://schema.org/Product" class="product-list w-100 w-50-m ph2-m w-third-l ph3">
+
+						<div itemprop="image" class="style aspect-ratio aspect-ratio--1x1" >
+							<a href="{{ product.url }}" style="background-image:url({{ product.image }});"
+						class="db bg-center cover aspect-ratio--object" /><h4 class="f4 helvetica bg-light-green no-underline white shadow-2 grow pa2 pv3 dib mr3">$ {{ product.price }}</h4>
+							</a>
+						</div>
+
+						<article itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer" class="product-details dib v-mid lh-copy avenir">
+							<h3><a  itemprop="url" class="f5 f4-ns mb0 link black-90 link dim avenir" href="{{ product.url }}"><span itemprop="name">{{ product.title }}</span></a></h3>
+							<h4 itemprop="itemOffered">Category: {{ product.cat }}</h4>
+
+							<div itemprop="description" class="product-description f6 f5 fw4 mt1 black-60 pb4">
+								{{ product.description_markdown | truncate: 92 | markdownify }}
+							</div>
+
+						</article>
+
+				</div>
+				{% endfor %}
+
+		</div>
+
+		<div class="pa3">{% include site-search.html %}</div>
+	</section>
 </div>

@@ -1,10 +1,10 @@
-{% include head.html %}
-  <body data-bs-spy="scroll" data-bs-target="#navScroll">
-  {% include nav.html %}
-  <main>
-    {{ content }}
-  </main>
-  {% include footer.html %}
-  </body>
-</html>
- 
+---
+layout: default
+---
+<div class="content pa3 ph6-l">
+	<section class="page measure-wide f5 f4-ns lh-copy avenir">
+		<div class="container {% if page.full_width %}max-container{% endif %}">
+			{{ content }}
+		</div>
+	</section>
+</div>

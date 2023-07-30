@@ -1,25 +1,59 @@
-{% include head.html %}
-  <body data-bs-spy="scroll" data-bs-target="#navScroll">
-  {% include nav.html %}
-  <main>
-    <div class="w-100 overflow-hidden text-light">
-      <div class="container-fluid position-relative" style="background-color: #000000;">
-        <div class="col-12 col-lg-12 mt-0 h-100 position-absolute top-0 end-0 bg-cover" style="background-image: url(/img/{{ page.main-image }}); opacity: 0.3;">
-        </div>
-        <div class="container">
-          <div class="col-lg-10 py-vh-5 position-relative">
-            <h1 class="display-3 fw-bold mt-5 pt-5">{{ page.title }}</h1>
-            <p class="lead">{{ page.services }}</p>
-            <a class="btn btn-custom-secondary btn-xl shadow me-1 my-1" href="tel:{{ site.data.settings.basic_settings.phone }}">
-              {{ site.data.settings.basic_settings.phone }}
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    {{ content }}
-  </main>
-  {% include footer.html %}
-  </body>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="/assets/css/sup-tachyons.min.css" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff6f61" />
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta name="theme-color" content="#ffffff" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D0SHHPXVR7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D0SHHPXVR7');
+</script>
+<!-- Jekyll SEO -->
+{% seo %}
+</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="company-name db dt-l w-100 border-box pa3 ph6-l"></div>
+				{% include navigation.html %}
+			</div>
+
+			<section class="hero pv3 ph3 ph6-ns w-100">
+				<div itemscope class="text-container ">
+					{% if page.hero %}
+						<h1 itemprop="title" class="f1 lh-title helvetica">{{ page.hero }}</h1>
+
+					{% elsif page.title %}
+						<h1 itemprop="title" class="f1 lh-title helvetica">{{ page.title }}</h1>
+					{% endif %}
+
+					{% if page.subtitle %}
+
+						<h2 class="f3 lh-title helvetica">{{ page.subtitle }}</h2>
+					{% endif %}
+					</div>
+			</section>
+		</header>
+
+		<div class="">
+
+		{{ content }}
+
+	</div>
+
+		{% include footer.html %}
+
+	</body>
 </html>
- 

@@ -1,33 +1,110 @@
-category-list: [services]
+# This will be the first part of the title tag for your site <title> site.name + page.title </title>
+title: Wooley Art | Game Art
+url: "https://wooleyart.com" # the base hostname & protocol for your site, e.g. http://example.com, also used in jekyll-seo-tag
+baseurl:
+repo: 
+google_analytics_key: G-D0SHHPXVR7
 
-# Privacy Policy and Terms of Service page
-state: Utah
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+tagline: Art Inspired by the Golden Age of Gaming
+description: Discover a nostalgic journey through illustrated wonders and relive the golden age of gaming with our collection of game art.
+author:
+  name: Wooley
+  email: info@wooleyart.com
+  twitter: # twitter username without the @ symbol
+  phone: "(385) 469-2233"
+social:
+  name: Wooley Art # replace this
+  links:
+    - https://wooleyart.com
 
-# Custom Navbar Colors
-navbar-colors:
-  bg: "#rgba(255, 255, 255, 1)"
-  menu_color: "#000000"
-
-# Custom button
-btn-custom-primary:
-  text-color: "#ffffff"
-  bg: "#000000"
-  border-color: "#000000"
-  hover-text-color: "#ffffff"
-  hover-bg: "#3f3f3f"
-  hover-border-color: "#3f3f3f"
-
-btn-custom-secondary:
-  text-color: "#000000"
-  bg: "#ffffff"
-  border-color: "#ffffff"
-  hover-text-color: "#000000"
-  hover-bg: "#dddddd"
-  hover-border-color: "#dddddd"
-
-btn-border-radius: "0px"
+# Build settings
+markdown: kramdown
+timezone: FR
 
 collections:
-  projects:
+  products:
+    _hide_content: false
     output: true
-    permalink: /project/:slug
+
+permalink: /:title/ # pretty
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "products"
+    values:
+      layout: "product"
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "index.html"
+    values:
+      layout: "default"
+
+jekyll-archives:
+  enabled:
+    - categories
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-leaflet
+  - jekyll-feed
+  - jekyll-archives # not on Supply theme
+
+include:
+  - .htaccess
+  - _pages
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
+  - LICENCE
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Contact settings
+formcarry: https://formcarry.com/ # add you formcarry endpoint url (see https://formcarry.com/documentation/getting-started)
+
+# Social
+
+social_icons:
+  - Email
+  - Facebook
+  - Google Plus
+  - Instagram
+  - LinkedIn
+  - Pinterest
+  - Tumblr
+  - Twitter
+  - YouTube
+  - RSS
+
+feed:
+  collections:
+    products:
+      path: "/products.xml"
+
+# Jekyll Archives Settings https://github.com/jekyll/jekyll-archives
+jekyll-archives:
+  enabled: 'all'
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/:name/'
+  category_archive:
+    type: liquid
