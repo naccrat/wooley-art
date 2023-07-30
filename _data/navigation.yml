@@ -1,17 +1,19 @@
-- name: Products
-  link: /
-  new_window: false
-  highlight: true
-- name: About
-  link: /about/
-  new_window: false
-  highlight: false
-- name: Contact
-  link: /contact/
-  new_window: false
-  highlight: false
-
-- name: FAQ
-  link: /faq/
-  new_window: false
-  highlight: false
+- title: "Home"
+  url: "/"
+- title: "Website Special"
+  url: "/website-small-business-package/"
+- title: "Services"
+  url: "/services/"
+  sublinks:
+  - title: "Website Design"
+    url: "/website-design/"
+  - title: "App Design"
+    url: "/app-design/"
+  - title: "Logo Design"
+    url: "/logo-design/"
+# - title: "Projects"
+#   url: "#projects"
+- title: "About"
+  url: "/about/"
+# - title: "Contact"
+#   url: "/contact/"
