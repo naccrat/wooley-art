@@ -1,60 +1,31 @@
 <footer>
-  <div class="container small border-top">
-    <div class="row py-5 d-flex justify-content-between">
-      <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
-        {% if site.data.settings.basic_settings.logo %}
-        <a href="{{ site.data.settings.basic_settings.url }}">
-          <img src="{{ site.data.settings.basic_settings.url }}/img/{{ site.data.settings.basic_settings.logo }}" class="pb-3" width="{{ site.data.settings.basic_settings.logo-width }}" alt="Logo for {{ site.data.settings.basic_settings.title }}">
+  <div class="container small border-top border-bottom">
+    <div class="row d-flex justify-content-between">
+      <div class="col-12 col-lg-6 border-end py-5">
+        {% if site.logo %}
+        <a href="{{ site.url }}">
+          <img src="{{ site.url }}/img/{{ site.logo }}" class="pb-3" width="{{ site.logo-width }}" alt="Logo for {{ site.title }}">
         </a>
         {% else %}
-        <h3 class="h6 mb-3"><a href="{{ site.data.settings.basic_settings.url }}" class="text-decoration-none">{{ site.data.settings.basic_settings.title }}</a></h3>
+        <h3 class="h6 mb-3"><a href="{{ site.url }}" class="text-decoration-none">{{ site.title }}</a></h3>
         {% endif %}
-        <address class="text-secondary mt-3">
-          {{ site.data.settings.basic_settings.location }}
-          <a href="tel:{{ site.data.settings.basic_settings.phone }}" class="btn btn-custom-primary mt-1">
-          {{ site.data.settings.basic_settings.phone }}</a>
-        </address>
-        <h3 class="h6 mb-3">Working Hours</h3>
-        <p><strong>Monday&ndash;Friday</strong><br>
-          9:00 am&ndash;5:00 pm</p>
+        <p class="mt-3">{{ site.description }}</p>
       </div>
 
-      <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
-        <h3 class="h6 mb-3">Navigation</h3>
+      <div class="col-6 col-lg-3 border-end py-5">
         <ul class="nav flex-column">
           {% for item in site.data.navigation %}
           <li class="nav-item">
             <a href="{{ item.url }}" class="nav-link link-secondary ps-0">{{ item.title }}</a>
           </li>
           {% endfor %}
-          <li class="nav-item">
-            <a class="nav-link link-secondary ps-0" href="/sitemap.xml" target="_blank">Sitemap</a>
-          </li>
         </ul>
       </div>
 
-      <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
-        <h3 class="h6 mb-3">Services</h3>  
-        {% for cat in site.category-list %}  
-        <ul class="nav flex-column">
-          {% for page in site.pages %}
-            {% if page.resource == true %}
-              {% for pc in page.categories %}
-                {% if pc == cat %}
-                  <li class="nav-item">
-                    <a class="nav-link link-secondary ps-0" href="{{ page.url }}">{{ page.title }}</a>
-                  </li>
-                {% endif %}
-              {% endfor %}
-            {% endif %}
-          {% endfor %}
-        </ul>
-        {% endfor %}
-      </div>
-
-      <div class="col-12 col-lg-6 col-xl-3 p-5">
-        <h3 class="h6 mb-3">Social</h3>
-        <ul class="socials">
+      <div class="col-6 col-lg-3 py-5">
+        <p>Looking for something custom? <a href="/contact/" class="link-fancy">Get in touch!</a></p>
+        <p><a href="tel:{{ site.phone }}" class="link-fancy mt-1">{{ site.phone }}</a></p>
+        <ul class="list-unstyled socials">
           {% for url in site.data.settings.social_settings %}
           {% if url[1] != '' %}
           <li class="socials__item">
@@ -70,12 +41,17 @@
   </div>
 
   <div class="container text-center py-3 small">
-    © 2023 All Rights Reserved | <a href="{{ site.data.settings.basic_settings.url }}" class="link-fancy">{{ site.data.settings.basic_settings.title}}</a> | <a class="link-fancy" href="/privacy-policy/">Privacy Policy</a> | <a class="link-fancy" href="/terms-of-service/">Terms of Service</a>
+    © 2023 All Rights Reserved | 
+    <a href="{{ site.url }}" class="link-fancy">{{ site.title}}</a> | 
+    <a class="link-fancy" href="/privacy-policy/">Privacy Policy</a> | 
+    <a class="link-fancy" href="/terms-of-service/">Terms of Service</a> | 
+    <a class="link-fancy" href="/sitemap.xml" target="_blank">Sitemap</a> | 
+    Designed by <a class="link-fancy" href="https://325studio.com/" target="_blank">325 Studio</a>
   </div>
 </footer>
 
-<script src="{{ site.data.settings.basic_settings.url }}/js/bootstrap.bundle.min.js"></script>
-<script src="{{ site.data.settings.basic_settings.url }}/js/aos.js"></script>
+<script src="{{ site.url }}/js/bootstrap.bundle.min.js"></script>
+<script src="{{ site.url }}/js/aos.js"></script>
 
 <script>
   let scrollpos = window.scrollY

@@ -11,7 +11,7 @@ tagline: Game Art
 google_analytics: G-D0SHHPXVR7
 
 social:
-  name: Wooley Art # replace this
+  name: Wooley
   links:
     - https://www.facebook.com/profile.php?id=100092839737022
     - https://www.instagram.com/wooley_art/
@@ -35,6 +35,3 @@ collections:
   products:
     output: true
     permalink: /products/:slug
-
-plugins:
-  - jekyll-seo-tag
