@@ -6,39 +6,35 @@ description: Discover a nostalgic journey through illustrated wonders and relive
 
 <div class="w-100 overflow-hidden">
   <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="row row-cols-1 row-cols-md-2 g-5 mb-5">
-          {% for product in site.products reversed %}
-          <div class="col-12 col-lg-6 col-xl-4 ">
-            <div class="card h-100 border-0">
-              
-              <div class="position-relative">
-                <p class="fs-5 fw-bolder position-absolute top-0 start-0 mt-3 py-2 px-3 bg-cta-custom text-light shadow-sm">
-                  {% if product.price_print %}
-                    ${{ product.price_print }}
-                  {% else %}
-                    ${{ product.price_digital }}
-                  {% endif %}
-                </p>
-              </div>
-              <img src="img/products/{{ product.image_thumbnail }}" width="100%" class="shadow-sm">
-              
-              <div class="card-body">
-                
-                <h3 class="card-title pt-1">
-                  <a href="{{ product.url }}" class="stretched-link text-decoration-none">{{ product.title }}</a>
-                </h3>
+    <div class="row row-cols-1 row-cols-md-2 g-5 mb-5">
+      {% for product in site.products reversed %}
+      <div class="col-12 col-lg-6 col-xl-4 ">
+        <div class="card h-100 border-0">
+          
+          <div class="position-relative">
+            <p class="fs-5 fw-bolder position-absolute top-0 start-0 mt-3 py-2 px-3 bg-cta-custom text-light shadow-sm">
+              {% if product.price_print %}
+                ${{ product.price_print }}
+              {% else %}
+                ${{ product.price_digital }}
+              {% endif %}
+            </p>
+          </div>
+          <img src="img/products/{{ product.image_thumbnail }}" width="100%" class="shadow-sm">
+          
+          <div class="card-body">
+            
+            <h3 class="card-title pt-1">
+              <a href="{{ product.url }}" class="stretched-link text-decoration-none">{{ product.title }}</a>
+            </h3>
 
-                <p class="card-text">{{ product.description | truncate: 95 | markdownify }}</p>
-                <div class="card-footer text-muted small px-0 bg-transparent">{{ product.categories | join: ', ' }}
-                </div>
-              </div>
+            <p class="card-text">{{ product.description | truncate: 95 | markdownify }}</p>
+            <div class="card-footer text-muted small px-0 bg-transparent">{{ product.categories | join: ', ' }}
             </div>
           </div>
-          {% endfor %}
         </div>
       </div>
+      {% endfor %}
     </div>
   </div>
 </div>
