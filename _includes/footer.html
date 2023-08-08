@@ -25,12 +25,12 @@
       <div class="col-6 col-lg-3 p-5">
         <p>Looking for something custom? <a href="/contact/" class="link-fancy">Get in touch!</a></p>
         <p><a href="tel:{{ site.phone }}" class="link-fancy mt-1">{{ site.phone }}</a></p>
-        <ul class="list-unstyled socials">
+        <ul class="list-inline">
           {% for url in site.data.settings.social_settings %}
           {% if url[1] != '' %}
-          <li class="socials__item">
-            <a href="{{ url[1] }}" target="_blank" class="socials__item__link" title="{{ url[0] | remove: '_url' | replace: '-', ' ' | capitalize }}">
-              <i class="fab fa-{{ url[0] | replace: 'facebook', 'facebook-f' | remove: '_url' }}" aria-hidden="true"></i>
+          <li class="list-inline-item">
+            <a href="{{ url[1] }}" target="_blank" class="h3" title="{{ url[0] | remove: '_url' | replace: '-', ' ' | capitalize }}">
+              <i class="bi bi-{{ url[0] | remove: '_url' }}" aria-hidden="true"></i>
             </a>
           </li>
           {% endif %}
