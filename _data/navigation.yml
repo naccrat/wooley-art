@@ -1,5 +1,10 @@
 - title: "Artwork"
   url: "/"
+  sublinks:
+  - title: Game Art
+    url: "/"
+  - title: Movie Posters
+    url: "/movie-posters/"
 - title: "About"
   url: "/about/"
 - title: "Contact"

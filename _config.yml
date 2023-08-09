@@ -35,3 +35,6 @@ collections:
   products:
     output: true
     permalink: /products/:slug
+  posters:
+    output: true
+    permalink: /posters/:slug
