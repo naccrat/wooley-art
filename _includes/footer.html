@@ -10,6 +10,18 @@
         <h3 class="h6 mb-3"><a href="{{ site.url }}" class="text-decoration-none">{{ site.title }}</a></h3>
         {% endif %}
         <p class="mt-3">{{ site.description }}</p>
+        
+        <p class="h6">Sign up for our newsletter</p>
+        <form class="row g-2" action="https://app.gumroad.com/follow_from_embed_form" method="post" style="--accent:var(--accent);--contrast-accent:var(--contrast-accent)" id="gumroad-follow-form-embed">
+          <div class="col-auto">
+            <input type="hidden" name="seller_id" value="3431861146654"/>
+            <input id="gumroad-follow-form-embed-input" class="form-control" type="email" placeholder="Your email address" name="email" value=""/>
+          </div>
+          <div class="col-auto">
+            <button id="gumroad-follow-form-embed-button" class="btn btn-custom-primary" type="submit">Sign up</button>
+          </div>
+        </form>
+        <p class="small mt-2">Don't worry, you're email won't be used for anything else.</p>
       </div>
 
       <div class="col-6 col-lg-3 border-end p-5">
